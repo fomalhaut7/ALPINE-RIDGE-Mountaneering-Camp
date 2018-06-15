@@ -1,0 +1,109 @@
+.row {
+  margin: 0px;
+}
+.program {
+  @include wraps;
+  .contentProgram {
+    margin-right: 0px;
+  }
+  .chapterName {
+    @include chapterName;
+  }
+  .bgMountain {
+    @include bgMountain;
+  }
+  .wrap {
+    min-height: 380px;
+    margin-bottom: 100px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+    .pieces {
+      min-height: 120px;
+      background: -webkit-linear-gradient(-50deg, #c3c2c8 0%, #c5cbd4 75%);
+      box-shadow: 0 10px 15px rgba(98, 98, 98, 0.10), 0 6px 6px rgba(44, 44, 44, 0.1);
+      margin-bottom: 10px;
+      padding: 20px 30px;
+      font-size: 14px;
+      line-height: 1.5em;
+      &:hover {
+        transition: box-shadow 0.5s ease-in-out;
+        box-shadow: 0 10px 20px rgba(98, 98, 98, 0.19), 0 6px 6px rgba(44, 44, 44, 0.23);
+        background: #eeeeee;
+      }
+    }
+    .programPanel {
+      @include panelStyle;
+      margin-top: 20px;
+    }
+  }
+  .programText {
+    margin: 0;
+  }
+  .contentCards {
+    margin-right: 0px;
+    .cardProgram {
+      min-height: 420px;
+      min-width: 240px;
+      font-size: 14px;
+      line-height: 1.5em;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      &:hover {
+        transform: scale(0.99);
+        background: rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(192, 192, 192, 0.23);
+      }
+      .cardLabel {
+        position: relative;
+        height: 180px;
+        width: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .title {
+        height: 25px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .subtitle {
+        min-height: 110px;
+        font-size: 13px;
+      }
+      .buttonStyle {
+        bottom: 0px;
+        a{
+          text-decoration: none;
+          color: #f9f9f9;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .cardProgram {
+    height: 300px;
+    font-size: 12px;
+    line-height: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &:hover {
+      transform: scale(0.99);
+      background: rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(192, 192, 192, 0.23);
+    }
+    .cardLabel {
+      position: relative;
+      min-height: 200px;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .subtitle {
+      font-size: 13px;
+      height: 50px;
+    }
+  }
+}

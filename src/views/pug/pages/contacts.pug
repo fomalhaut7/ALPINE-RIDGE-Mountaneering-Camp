@@ -1,0 +1,50 @@
+extends ../main-layout
+
+block title
+    | Contacts
+
+block content
+    include ../parts/navigation
+    .contactWrap
+        .row
+            .col-sm-12.col-md-8.offset-1.col-lg-5.offset-1.chapterName
+                p CONTACTS
+        .row.contactContent
+            img(src="../img/programBG.png").bgMountain
+            .col-sm-10.offset-1.col-md-4.offset-1.col-lg-4.offset-1.contactPanel
+                h6 Our address in US
+                    p 1192 Sheridan Ave, Cody, WY 82414
+                    p Tel: 307-587-4221
+                    br
+                    h6 Our address in Europe
+                    p Siabod Cottage, Capel Curig, Conwy, North Wales LL24 OES, UK
+                    p Tel: 01690-720386
+                    br
+                    h6 Our address in Chile
+                    p Casilla 196, Correo 10 6760323 Las Condes Santiago, Chile
+                    p Tel: 56-2-2422.8888
+            .col-sm-10.offset-1.col-md-5.offset-1.col-lg-5.offset-1.contactForm
+                form
+                    .form-group
+                        label(for='email') E-mail
+                        input#email.form-control(type='email', placeholder='Please enter your e-mail')
+                    .form-group
+                        label(for='name') E-mail
+                        input#name.form-control(type='name', placeholder='Please enter your full name')
+                    .form-group
+                        label(for='location') Location
+                            select#location.form-control
+                                option Alps
+                                option Andes
+                                option Himalayan
+                                option Caucasus
+                    .form-group
+                        label(for='textArea') Leave us a message
+                        input#textArea.form-control(type='textArea', placeholder='Please enter the content of your request')
+                    form
+                        .form-group
+                            label(for='attachFile') You can attach any documentation if it is nessesary
+                            input#attachFile.form-control-file(type='file')
+                    button.btn.btn-secondary(type='submit') Submit
+
+    include ../parts/footer

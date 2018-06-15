@@ -1,0 +1,85 @@
+.expectations {
+  @include wraps;
+  margin-right: 0px;
+  .chapterName {
+    @include chapterName;
+    margin-top: 0px;
+  }
+  .bgMountain {
+    @include bgMountain;
+    margin-right: 0px;
+  }
+  .contentProgram {
+    min-height: 450px;
+    margin-bottom: 50px;
+    margin-right: 0px;
+    .pieces {
+      .imgAlpinist {
+        background-size: cover;
+        min-height: 200px;
+        width: 400px;
+        margin-bottom: 20px;
+        &:hover {
+          border: 1px solid #8a9ca2;
+          transition: box-shadow 0.5s ease-in-out;
+          box-shadow: 0 10px 20px rgba(98, 98, 98, 0.19), 0 6px 6px rgba(44, 44, 44, 0.23);
+          background: #eeeeee;
+        }
+      }
+      .pic2 {
+        top: -40px;
+        margin-right: 10px;
+      }
+      .pic3 {
+        top: -80px;
+      }
+    }
+
+    .expectationsPanel {
+      min-height: 250px;
+      min-width: 220px;
+      @include panelStyle;
+    }
+  }
+  .expectationText {
+    min-height: 350px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+  .tileExpect {
+    min-height: 400px;
+    margin-right: 0px;
+    .tile {
+      min-height: 170px;
+      background: grey;
+      border: 1px solid white;
+      text-align: center;
+      padding-top: 40px;
+      text-transform: uppercase;
+      color: white;
+      font-size: 15px;
+      &:hover {
+        background: white;
+        color: grey;
+        transition: transform 0.4s, opacity 0.6s;
+        box-shadow: 0px 20px 20px rgba(98, 98, 98, 0.19), 0px 12px 20px rgba(44, 44, 44, 0.23);
+      }
+    }
+  }
+}
+@media (max-height: 768px) {
+  .chapterName {
+    display: none;
+  }
+  .imgAlpinist {
+    background-size: cover;
+    min-height: 400px;
+    margin-bottom: 50px;
+  }
+  .pic2 {
+    top: 0px;
+  }
+  .pic3 {
+    top: 0px;
+  }
+}

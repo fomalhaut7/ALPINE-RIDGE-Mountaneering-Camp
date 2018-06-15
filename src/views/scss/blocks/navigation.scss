@@ -1,0 +1,260 @@
+.header {
+  height: 10vh;
+  z-index: 99999;
+  display: block;
+  position: absolute;
+  top: 0;
+  }
+.top-bar{
+  width: 100%;
+  .container{
+    width: 100%;
+    #navigation-scroll{
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+    .top{
+      display: none;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 22px;
+      position: fixed;
+      bottom: 45px;
+      right: 35px;
+    }
+    .show-top{
+      display: block;
+      z-index: 99;
+      transition: 2s;
+    }
+    .top:hover{
+      background: rgb(87, 160, 255);
+    }
+    .nav-button{
+      button{
+        border: none;
+        outline: none;
+        display: inline-block;
+        color: #a3a29c;
+        border-radius: 0px;
+        cursor: pointer;
+        background-color: transparent;
+        float: left;
+        font-size: 42px;
+        left: -20px;
+        &:hover{
+          color: rgb(128, 128, 128);
+        }
+      }
+    }
+  }
+  ul{
+    list-style: none;
+  }
+  #trigger-overlay:hover, a:focus, a:hover {
+    color: #69716F;
+    text-decoration: none;
+    transition: .8s;
+    left: 0;
+    .fa{
+      font-weight: lighter;
+    }
+  }
+  p {
+    font-size: 16px;
+  }
+  .wrapper{
+    padding: 0px 0px;
+  }
+
+}
+//Overlay style
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: linear-gradient(50deg, rgb(62, 69, 67), rgb(18, 21, 19));
+}
+.overlay-close {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  left: 14px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url(../img/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
+}
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  font-size: 54px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+}
+.overlay ul li {
+  display: block;
+  height: 20%;
+  text-decoration: none;
+  padding: 10px 15px;
+  outline: none;
+  position: relative;
+  background: none;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 10px 10px;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+.overlay ul li a {
+  font-weight: 300;
+  font-size: 30px;
+  display: block;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  &:hover,
+  &:focus {
+    color: #b7b7b7;
+  }
+}
+.overlay-hugeinc {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay-hugeinc.open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.overlay-hugeinc nav {
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+.overlay-hugeinc nav ul {
+  opacity: 0.4;
+  -webkit-transform: translateY(-25%) rotateX(35deg);
+  transform: translateY(-25%) rotateX(35deg);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+.overlay-hugeinc.open nav ul {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.overlay-hugeinc.close nav ul {
+  -webkit-transform: translateY(25%) rotateX(-35deg);
+  transform: translateY(25%) rotateX(-35deg);
+}
+.fixed {
+  position: fixed;
+  background: #2D312F;
+  top: 0;
+  z-index: 99;
+  transition: 1s;
+  height: 70px;
+}
+.fixed .nav-button{
+  margin: 0px 0px;
+}
+.nav-button button{
+  border: none;
+  outline: none;
+  display: inline-block;
+  color: #fff;
+  border-radius: 0px;
+  cursor: pointer;
+  background-color: transparent;
+  float: right;
+  font-size: 42px;
+  /*border: 1px solid white;*/
+  padding: 0px 12px;
+}
+.nav-button button:hover{
+  color: rgb(87, 160, 255);
+  background-color: white;
+}
+.navbar-white {
+  background-color: #fff !important;
+  transition: background 0.5s ease-out;
+  box-shadow: 0 0 10px #39c;
+}
+
+
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
+  .overlay ul li {
+    min-height: 34px;
+  }
+}
+@media (max-width: 966px){
+  .header{
+    height: 100%;
+  }
+  .header img{
+    display: none;
+  }
+  .img-hover{
+    left: 0;
+    right: 0;
+  }
+}
+@media (max-width: 480px){
+   .wrapper{
+    padding: 35px 0px;
+  }
+  .header{
+    text-align: center;
+    padding: 10px 0px;
+  }
+
+  .overlay .overlay-close {
+    right: 45px;
+    top: 30px;
+  }
+  .nav-button button{
+    font-size: 36px;
+    margin-top: -20px;
+  }
+  #logo{
+    font-size: 56px;
+    text-align: left;
+  }
+  }
+@media (max-width: 320px){
+  .overlay nav ul{
+    margin-left: -20px;
+  }
+  .overlay .overlay-close {
+    right: 50px;
+  }
+}
+

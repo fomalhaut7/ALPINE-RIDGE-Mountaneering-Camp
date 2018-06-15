@@ -1,0 +1,20 @@
+.aboutUs {
+ @include wraps;
+  .chapterName {
+    @include chapterName;
+    margin-top: -20px;
+    margin-left: 50px;
+  }
+  .aboutUsPanel {
+      @include panelStyle;
+      min-height: 400px;
+  }
+
+  .bgMountain {
+    @include bgMountain;
+  }
+  .aboutUsText {
+    min-height: 400px;
+    padding-top: 10px;
+  }
+}

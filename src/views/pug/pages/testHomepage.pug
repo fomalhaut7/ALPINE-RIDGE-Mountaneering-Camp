@@ -1,0 +1,28 @@
+extends ../main-layout
+
+block title
+    | Test Homepage
+
+block content
+    include ../parts/navigation
+    section.slider
+        .row
+            .col-5.col-md-7.whiteSide
+            .col-12.col-md-5.grafitSide
+                .shadowOverlay
+        img(src="../img/logoWhite.png").logo
+        button.galleryButton
+            a(href='education.html') EDUCATION
+            i.fa.fa-angle-double-right
+        .row.photoPlace
+            .col-11.col-md-7.photo
+                .mountaneering Mountaneering
+                    span.camp Camp
+            p(align="right").text From first steps to the biggest objectives. Trending high in satisfaction, but as we grow both our member and non-member community, people are having more varied experiences.
+            .frame
+                button.enterButton
+                    a(href='gallery.html') ENTER
+                    i.fa.fa-angle-double-right
+
+
+

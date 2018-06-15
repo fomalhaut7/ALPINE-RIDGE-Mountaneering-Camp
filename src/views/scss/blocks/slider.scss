@@ -1,0 +1,346 @@
+.slider {
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: row;
+  .whiteSide {
+    height: 100%;
+    width: 60%;
+    background-color: white;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .photo{
+      height: 70vh;
+      width: 53vw;
+      background: url("../img/mainPage.jpeg") no-repeat center;
+      background-size: cover;
+      margin-left: 13%;
+      margin-top: 11%;
+      z-index: 2000;
+      position: relative;
+      .mountaneering{
+        position: absolute;
+        font-size: 60px;
+        color: white;
+        left: 40%;
+        top: 30%;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 100;
+      }
+      .camp{
+        color: #000;
+      }
+      .galleryButton{
+        display: block;
+        text-decoration: none;
+        padding: 10px 15px;
+        outline: none;
+        background: #32b8c2;
+        border-radius: 15px;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #feffef;
+        cursor: pointer;
+        border: none;
+        float: left;
+        left: 5%;
+        top: 70vh;
+        position: fixed;
+        z-index: 3500;
+        &:hover{
+          background: #245b6b;
+          color: white;
+        }
+        a{
+          text-decoration: none;
+          color: #feffef;
+        }
+      }
+    }
+  }
+  .grafitSide {
+    height: 100vh;
+    width: 40%;
+    background: url("../img/graphite.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    .frame{
+      flex-wrap: wrap;
+      flex-direction: row;
+      height: 85vh;
+      width: 90%;
+      margin-top: 3%;
+      right: 7%;
+      border: 1px solid white;
+      top: 0;
+      position: fixed;
+      .logo{
+        height: 150px;
+        position: fixed;
+        //left: 50%;
+        margin-left: 63vw;
+        //margin-right: 10vw;
+        top: 10%;
+        z-index: 3500;
+      }
+      .text{
+        height: 15vh;
+        width: 30vw;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 19px;
+        color: white;
+        font-weight: 100;
+        margin-right: 10px;
+        float: right;
+        //left: 58%;
+        margin-top: 58vh;
+        //position: absolute;
+        z-index: 3000;
+      }
+      .enterButton{
+        display: block;
+        text-decoration: none;
+        padding: 10px 15px;
+        outline: none;
+        background: none;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #aeaeae;
+        cursor: pointer;
+        border: none;
+        //align-content: flex-end;
+        float: right;
+        margin-left: 63vw;
+        //margin-left: 280px;
+        margin-right: 5px;
+        //top: 83%;
+        &:hover{
+          background: rgba(210, 210, 210, 0.2);
+          color: white;
+        }
+        a{
+          text-decoration: none;
+          color: white;
+        }
+      }
+
+    }
+
+  }
+  .logoHide{
+    display: none;
+  }
+}
+@media screen  and (max-width: 850px) {
+
+}
+@media screen  and (max-width: 993px) {
+  .grafitSide{
+    width: 100vw;
+    height: 100vh;
+  }
+  //.photo{
+  //  display: none;
+  //}
+  .whiteSide {
+    display: none;
+  }
+  .text{
+    display: none;
+    height: 20vh;
+    width: 100vw;
+    //color: red;
+    //margin-left: 50px;
+  }
+  .frame {
+    //display: none;
+    top: 5%;
+    height: 80vh;
+    width: 90vw;
+    border: 1px solid red;
+  }
+  .logo{
+    height: 300px;
+    right: 35%;
+    //top: 20%;
+    position: absolute;
+  }
+  .enterButton{
+    margin-right: 30%;
+    top: 20%;
+  }
+  .logoHide{
+    display: flex;
+  }
+}
+//.slider {
+//  position: relative;
+//  .whiteSide{
+//    height: 100%;
+//    background-color: white;
+//  }
+//  .grafitSide{
+//    height: 100vh;
+//    background: url("../img/graphite.jpg") no-repeat center;
+//    background-size: cover;
+//    position: relative;
+//    .shadowOverlay{
+//      height: 100%;
+//      width: 100%;
+//      background: rgba(18, 21, 19, 0.5);
+//      background-size: cover;
+//      left: 0;
+//    }
+//  }
+//  .logo{
+//    height: 150px;
+//    position: fixed;
+//    right: 13%;
+//    top: 10%;
+//    z-index: 3500;
+//  }
+//  .galleryButton{
+//    display: block;
+//    text-decoration: none;
+//    padding: 10px 15px;
+//    outline: none;
+//    background: #32b8c2;
+//    border-radius: 15px;
+//    font-size: 18px;
+//    font-weight: 300;
+//    letter-spacing: 1px;
+//    color: #feffef;
+//    cursor: pointer;
+//    border: none;
+//    float: left;
+//    left: 7%;
+//    top: 70vh;
+//    position: fixed;
+//    z-index: 3500;
+//    &:hover{
+//      background: #245b6b;
+//      color: white;
+//    }
+//    a{
+//      text-decoration: none;
+//      color: #feffef;
+//    }
+//  }
+//  .photoPlace{
+//    height: 100vh;
+//    width: 100vw;
+//    position: absolute;
+//    top: 0;
+//    .photo{
+//      height: 70vh;
+//      width: 53vw;
+//      background: url("../img/mainPage.jpeg") no-repeat center;
+//      background-size: cover;
+//      margin-left: 10%;
+//      margin-top: 7%;
+//      z-index: 2000;
+//      position: relative;
+//      .mountaneering{
+//        position: absolute;
+//        font-size: 60px;
+//        color: white;
+//        left: 40%;
+//        top: 30%;
+//        font-family: 'Open Sans Condensed', sans-serif;
+//        font-weight: 100;
+//      }
+//      .camp{
+//        color: #000;
+//      }
+//    }
+//    .frame{
+//      height: 85vh;
+//      width: 40vw;
+//      margin-top: 3%;
+//      right: 5%;
+//      border: 1px solid white;
+//      top: 0;
+//      position: fixed;
+//    }
+//    .text{
+//      height: 15vh;
+//      width: 35vw;
+//      left: 58%;
+//      font-family: 'Open Sans Condensed', sans-serif;
+//      font-size: 19px;
+//      color: white;
+//      font-weight: 100;
+//      margin-right: 10px;
+//      top: 58%;
+//      position: absolute;
+//      z-index: 3000;
+//    }
+//    .enterButton{
+//      display: block;
+//      text-decoration: none;
+//      padding: 10px 15px;
+//      outline: none;
+//      position: relative;
+//      background: none;
+//      font-size: 20px;
+//      font-weight: 300;
+//      letter-spacing: 2px;
+//      color: #aeaeae;
+//      cursor: pointer;
+//      border: none;
+//      align-content: flex-end;
+//      float: right;
+//      right: 5px;
+//      top: 83%;
+//      &:hover{
+//        background: rgba(210, 210, 210, 0.2);
+//        color: white;
+//      }
+//      a{
+//        text-decoration: none;
+//        color: white;
+//      }
+//    }
+//  }
+//}
+//
+//@media screen  and (max-width: 1125px) {
+//  .text{
+//    height: 15vh;
+//    color: red;
+//  }
+//  .mountaneering{
+//    font-size: 50px
+//  }
+//  .enterButton{
+//    top: 85%
+//  }
+//}
+//@media screen  and (max-width: 850px) {
+//  .grafitSide{
+//    width: 100vw;
+//    height: 100vh;
+//  }
+//  .photo{
+//    display: none;
+//  }
+//  .whiteSide {
+//    display: none;
+//  }
+//  .text{
+//    display: none;
+//  }
+//  .frame {
+//    //display: none;
+//    height: 90vh;
+//    width: 90vw;
+//    border: 1px solid red;
+//  }
+//  .logo{
+//    height: 200px;
+//    right: 50%;
+//    top: 20%;
+//    position: absolute;
+//  }
+//}

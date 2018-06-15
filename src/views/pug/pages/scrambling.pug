@@ -1,0 +1,55 @@
+extends ../main-layout
+
+block title
+    | Scrambling
+
+block content
+    include ../parts/navigation
+    .avalancheWrap
+        .row
+            .col-12.col-sm-10.offset-sm-1.col-md-6.offset-md-3
+                p.sectionName SCRAMBLING
+        .row
+            .col-sm-10.offset-1.col-md-3.offset-1.col-lg-3.offset-1.animated.fadeInLeft
+                img.pull-right.left-img(src='../img/6.png', alt='')
+            .col-sm-12.col-md-7.col-lg-7.wow.animated.fadeInRight
+                .features-list-right
+                    p Most people think of eggs when they hear ‘scrambling’. But when it comes to hiking up mountains, scrambling constitutes a very different activity than whisking eggs. Google defines it as making one’s way quickly or awkwardly up a steep gradient or over rough ground by using one’s hands as well as one’s feet. A pretty accurate definition, but as far as hiking on Table Mountain goes, its meaning extends further than just that and includes a few finer points worth knowing.
+                    p define scrambling as the grey area between walking and climbing. Some people would consider easy scrambling as steep walking; others would classify hard scrambling as easy climbing. If you need your hands to make headway, you’re scrambling. But at which point does scrambling become climbing? Climbing requires the use of hands more consistently than scrambling, while also involving more technical / complex moves and footwork. There is no clear distinction; the one verges into the other. Call it elementary climbing to be on the safe side.
+                    p While you don’t need climbing experience to do a scrambling route, scrambling is inherently dangerous. Most of the time it’s not the actual climbing moves that causes accidents, but people’s inability to pick the right line, inexperience in identifying loose / friable rock, inability to provide safety (rope and belaying techniques) and a poor head for heights. Let’s briefly look at them:
+                    #accordionExample.accordion.right
+                        .card.chapter
+                            #heading1.card-header
+                                h5.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapse1', aria-expanded='false', aria-controls='collapse1').chapterTitle Picking the right line
+                                    i.fa.fa-chevron-down
+                            #collapse1.collapse(aria-labelledby='heading1', data-parent='#accordionExample')
+                                .card-body
+                                    p To the untrained eyes, identifying the line of least resistance / easiest break in a rock band can be a challenge. Scrambling lines do not jump out at you the way a trail across bushy terrain does; so it’s easy to end up scrambling up the wrong line, which in most cases ends up being more difficult (of a harder grade) than what you meant to climb / what you are capable of climbing.
+                        .card.chapter
+                            #heading2.card-header
+                                h5.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapse2', aria-expanded='false', aria-controls='collapse2').chapterTitle Loose and friable rock
+                                    i.fa.fa-chevron-down
+                            #collapse2.collapse(aria-labelledby='heading2', data-parent='#accordionExample')
+                                .card-body
+                                    p Most of the rock on Table Mountain requires care – experienced rock-climbers realize this, but your average hiker does not. Pulling on loose rock accounts for many scrambling and climbing accidents, and it takes a practiced eye to identify dodgy hand- and footholds.
+
+                        .card.chapter
+                            #heading3.card-header
+                                h5.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapse3', aria-expanded='false', aria-controls='collapse3').chapterTitle Providing safety
+                                    i.fa.fa-chevron-down
+                            #collapse3.collapse(aria-labelledby='heading3', data-parent='#accordionExample')
+                                .card-body
+                                    p Some scrambles are 2 meters off the ground, others 20, others 200. And for some members in the group, the scrambling will be well within their ability, for others at the fringes of their ability – mentally and physically. To minimize the risk of injury, you often need to use a rope at scrambling sections, and you need competence in using it effectively.
+                        .card.chapter
+                            #heading4.card-header
+                                h5.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapse4', aria-expanded='false', aria-controls='collapse4').chapterTitle Exposure to heights
+                                    i.fa.fa-chevron-down
+                            #collapse4.collapse(aria-labelledby='heading4', data-parent='#accordionExample')
+                                .card-body
+                                    p As mentioned above, some scrambles are not exposed to heights, others teeters on the edge of an abysmal drop. If you don’t have a good head for heights, the climbing on exposed scrambles will feel more tricky than it really is. You might find a non-exposed C-grade scramble easier than an exposed B-grade.
+                        p Scrambling is a great way to get a taste of what real climbing is all about, to explore the wilder parts of the mountain and to satisfy your sense of adventure. In the company of a competent and experienced mountain guide, you can safely tackle any of the myriad scramble routes on Table Mountain, each of them unique in several ways.
+    include ../parts/footer

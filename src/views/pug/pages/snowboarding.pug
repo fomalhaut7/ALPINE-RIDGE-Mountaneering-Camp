@@ -1,0 +1,62 @@
+extends ../main-layout
+
+block title
+    | Snowboarding
+
+block content
+    include ../parts/navigation
+    .avalancheWrap
+        .row
+            .col-12.col-sm-10.offset-sm-1.col-md-6.offset-md-3
+                p.sectionName SNOWBOARDING
+        .row
+            .col-sm-10.offset-1.col-md-3.offset-1.col-lg-3.offset-1.animated.fadeInLeft
+                img.pull-right.left-img(src='../img/3.png', alt='')
+            .col-sm-12.col-md-7.col-lg-7.animated.fadeInRight
+                .features-list-right
+                    p Snowboarding is a winter sport that involves descending a slope that is covered with snow while standing on a board attached to a rider’s feet, using a special boot set onto a mounted binding. The development of snowboarding was inspired by skateboarding, sledding, surfing and skiing. It was developed in the United States in the 1960s to 1970s and became a Winter Olympic Sport in 1998.
+                    p Snowboarding has been around since the 1920s, when boys and men would tie plywood or wooden planks from barrels to their feet using clotheslines and horse reins in order to steer themselves down hills. Modern snowboarding began in 1965 when Sherman Poppen, an engineer in Muskegon, Michigan, invented a toy for his daughter by fastening two skis together and attaching a rope to one end so she would have some control as she stood on the board and glided downhill.
+                    h3 Types of Snowboarding
+                    #accordionExample.accordion.right
+                        .card.chapter
+                            #heading1.card-header
+                                h5.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapse1', aria-expanded='false', aria-controls='collapse1').chapterTitle Freeriding
+                                    i.fa.fa-chevron-down
+                            #collapse1.collapse(aria-labelledby='heading1', data-parent='#accordionExample')
+                                .card-body
+                                    p Freeriding is exactly that—riding at one’s leisure in any terrain and only bound by the mountain. This type of riding is best portrayed by the pursuit of riding massive peaks, but it’s not solely restricted to that. Riding natural features and adding freestyle elements to them is common. This riding style is limited by access to mountains and threatened by the dangers that exist (avalanches, crevasses) when seeking to ride in distant areas.
+                        .card.chapter
+                            #heading2.card-header
+                                h5.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapse2', aria-expanded='false', aria-controls='collapse2').chapterTitle Freestyling
+                                    i.fa.fa-chevron-down
+                            #collapse2.collapse(aria-labelledby='heading2', data-parent='#accordionExample')
+                                .card-body
+                                    p Whether in terrain parks, backcountry or urban environments— this broad term describes all riding where tricks are performed. Freestyle riding is, and continues to be a popular style of riding, especially with the continuous progression of features and tricks. Its future is only restricted to one’s creativity on a snowboard.
+
+                        .card.chapter
+                            #heading3.card-header
+                                h5.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapse3', aria-expanded='false', aria-controls='collapse3').chapterTitle Urban
+                                    i.fa.fa-chevron-down
+                            #collapse3.collapse(aria-labelledby='heading3', data-parent='#accordionExample')
+                                .card-body
+                                    p This style of riding is characterized by the use of existing features within or around urban and human-made landscapes. Handrails, ledges, parking structures, walls, etc. These features offer a playground for riding outside of resorts. The progression of street riding has surged in the last handful years as the level of riding has further adapted to such surroundings. It’s the most accessible form of riding for many younger riders and continues to grow.
+                        .card.chapter
+                            #heading4.card-header
+                                h5.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapse4', aria-expanded='false', aria-controls='collapse4').chapterTitle Half pipe
+                                    i.fa.fa-chevron-down
+                            #collapse4.collapse(aria-labelledby='heading4', data-parent='#accordionExample')
+                                .card-body
+                                    p Made popular by the last four Olympics, this part of snowboarding involves performing tricks while riding through a massive U-shaped snow feature at high speeds. Adapted form skateboard vert riding, snowboard half pipe has changed dramatically from the rudimentary days of riding natural gullies to today’s massive pipe productions that implement specialized snow machines and precision shaping. Larger pipes continue to allow riders to ride faster, go bigger and invent new tricks. However, the considerable time and financial costs of creating and maintaining pipes, as well as their limited accessibility pose a threat to its evolution.
+                        .card.chapter
+                            #heading5.card-header
+                                h5.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapse5', aria-expanded='false', aria-controls='collapse5').chapterTitle Boardercross/Race
+                                    i.fa.fa-chevron-down
+                            #collapse5.collapse(aria-labelledby='heading5', data-parent='#accordionExample')
+                                .card-body
+                                    p This side of snowboarding includes races such as slalom, giant slalom and boardercross. Boardercross is an adaptation of BMX riding where four riders race down a course of jumps, berms, etc. Slalom racing is a timed race through a series of gates. This niche side of the sport persists mainly in association with similar ski races. While deemed an Olympic sport, its future lies in the problem of attracting younger riders.
+    include ../parts/footer

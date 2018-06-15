@@ -1,0 +1,63 @@
+extends ../main-layout
+
+block title
+	| Expectations
+
+block content
+	include ../parts/navigation
+	.expectations
+		.row
+			.col-sm-6.col-md-5.offset-md-2.col-lg-5.offset-lg-4.chapterName
+				p EXPECTATIONS
+		.row.contentProgram
+			img(src="../img/programBG.png").bgMountain
+			.col-10.offset-1.col-lg-5.offset-lg-1
+				.row
+					.col-sm-12.col-md-8.pieces.pic1
+						img(src="../img/pic1.jpg").imgAlpinist
+				.row
+					.col-sm-8.col-md-8.col-lg-4.offset-lg-3.pieces.pic2
+						img(src="../img/pic1.jpg").imgAlpinist.pic2
+			.col-10.offset-1.col-lg-4.expectationsPanel.animated.fadeInDown
+				h3 EXPECTATIONS
+				ul(type='disc')
+					li Discover remote summits, airy ridges and stunning vistas
+					li Learn and practice alpine skills
+					li Be guided through mountains with a passion for their vocation
+		.row.expectationText
+			.col-sm-10.offset-sm-1.col-md-8.offset-md-2
+				p Whether you are an experienced alpinist or beginning mountaineer, the benefits of the light & fast approach are indisputable. Being lighter means using less energy with every step we take and every move we make. It is also just downright more comfortable when we are in motion. Being fast equates directly to safety. It means we are navigating hazardous terrain more quickly and tagging the summit in time to descend safely. It is also the way we progress towards bigger objectives over time. This clinic covers the most important aspects of the light & fast approach with a short classroom session followed by an intensive field session where we work on the implementation of the skills, strategies and tactics that are most useful for you. The professional athletes teaching these clinics have made light & fast a part of their very being. As we strongly believe that a commitment to the light & fast mentality is a commitment to an even more awesome life, we strongly believe that folks who take this clinic will get a lot out of it!
+		.row.tileExpect
+			.col-sm-10.offset-sm-1.col-lg-5.classroomCur
+				p(align="center") CLASSROOM CURRICULUM
+				.row
+					.col-sm-6.tile.skills
+						p Skills
+						i.fa.fa-get-pocket.fa-2x
+					.col-sm-6.tile.fitness
+						p Fitness
+						i.fa.fa-bicycle.fa-2x
+				.row
+					.col-sm-6.tile.gear
+						p Gear
+						i.fa.fa-link.fa-2x
+					.col-sm-6.tile.prepPlan
+						p Preparation & Planning
+						i.fa.fa-pagelines.fa-2x
+			.col-sm-10.offset-sm-1.col-lg-5.offset-lg-0.fieldCur
+				p(align="center") FIELD CURRICULUM
+				.row
+					.col-sm-6.tile.navigaing
+						p Navigating terrain
+						i.fa.fa-compass.fa-2x
+					.col-sm-6.tile.moving
+						p Moving in alpine terrain
+						i.fa.fa-tree.fa-2x
+				.row
+					.col-sm-6.tile.system
+						p Ropes and gear systems
+						i.fa.fa-cogs.fa-2x
+					.col-sm-6.tile.alpineFitness
+						p Alpine fitness
+						i.fa.fa-heartbeat.fa-2x
+	include ../parts/footer

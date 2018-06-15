@@ -1,0 +1,22 @@
+.contactWrap {
+  margin: 0px;
+  @include wraps;
+  .chapterName {
+    @include chapterName;
+    margin-top: -20px;
+    margin-left: 30px;
+  }
+  .contactPanel{
+    @include panelStyle;
+    min-height: 550px;
+    padding: 50px;
+    margin-bottom: 50px;
+    line-height: 1.5em;
+  }
+  .bgMountain {
+    @include bgMountain;
+  }
+  .form-control {
+    background: rgba(227, 227, 227, 0.4);
+  }
+}

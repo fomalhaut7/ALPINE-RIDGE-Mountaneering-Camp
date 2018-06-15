@@ -1,0 +1,15 @@
+.applicationWrap{
+  @include wraps;
+  .bgMountain{
+    @include bgMountain;
+  }
+  .form {
+    line-height: 1.5em;
+    font-size: 14px;
+    color: #59605e;
+    .labelStyle {
+      color: #59605e;
+      font-size: 15px;
+    }
+  }
+}

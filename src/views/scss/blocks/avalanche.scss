@@ -1,0 +1,53 @@
+.avalancheWrap{
+  @include wraps;
+  color: #545454;
+  margin-top: 100px;
+  line-height: 1.7em;
+  .chapterName {
+    @include chapterName;
+  }
+  .sectionName {
+    font-size: 50px;
+    color: rgba(133, 146, 137, 0.5);
+    margin-bottom: 50px;
+  }
+  .left-img-long{
+    width: 360px;
+    height: 1200px;
+    opacity: 0.4;
+  }
+  .left-img{
+    width: 330px;
+    height: 700px;
+    opacity: 0.4;
+  }
+  .features-list-right{
+    h3 {
+      font-size: 24px;
+      color: #000;
+    }
+    .right{
+      .chapter{
+        background: #f9f9f9;
+        .card-header {
+          border: none;
+        }
+        .chapterTitle{
+          font-weight: 500;
+          text-decoration: none;
+          color: #727272;
+        }
+      }
+    }
+  }
+  .marked{
+    background: #d5d5d5;
+    padding: 30px;
+  }
+
+}
+@media (max-width: 991px) {
+  .card {
+    min-height: 30px;
+  }
+}
